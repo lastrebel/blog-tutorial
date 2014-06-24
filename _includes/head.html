@@ -1,0 +1,16 @@
+<head>
+    <meta character="utf 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" > <!--this blocks devices like iphones to scale down-->
+    
+<title>
+    {% if page.title == "Home" %}
+        {{ site.title }} &#46; {{ site.tagline }}
+    {% else %}
+        {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+</title>
+<link rel="shortcut icon" href=""> <!--favicon for d browser tabs-->
+<link rel="apple-touch-icon" href=""> <!-- save as bookmark on apple devices and icon will appear like an image linked here -->
+<link rel="alternate" type="application/rss+xml" title="RSS" href="atom.xml">  <!--really simple sindication, rss or xml file you are giving access for other apps to read  n access d content; xml format is standardized-->w
+          
+</head>
