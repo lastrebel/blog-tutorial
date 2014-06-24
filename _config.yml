@@ -3,3 +3,4 @@ highlighter:    pygments #this highlights stuff like code
 title:          "Hello world"
 tagline:        "do not be alarmed, it's only a nightmare" #dunno
 paginate:       5
+baseurl:        http://lastrebel.github.io/blog-tutorial
