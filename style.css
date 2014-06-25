@@ -1,4 +1,4 @@
-html; body {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -55,12 +55,13 @@ article time {
 }
 
 body > div {
-    max-width: 38cm;
+    max-width: 38em;
     padding: 0 1em;
     margin: 0 auto;
 }
 
 article {
+    margin-bottom: 4em;
 }
 
 
