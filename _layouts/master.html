@@ -4,10 +4,13 @@
     {% include head.html %}
     
     <body>
-        <div id="master">
+        
+        {% include sidebar.html %}
+        
+        <section id="content">
         
             {{content}}
         
-        </div>
+        </section>
     </body>
 </html>

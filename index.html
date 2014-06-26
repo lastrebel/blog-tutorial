@@ -4,15 +4,15 @@ title: Home
 ---
 
 
-<sectin id="posts">
     {% for post in paginator.posts %}
     
     <article>
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-        <time>{{ post.date | date_to_string }}</time>
+        
+        <p><time>{{ post.date | date_to_string }}</time></p>
+        
         {{ post.excerpt }}
 
     </article>
     {% endfor %}
 
-</sectin>

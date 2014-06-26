@@ -4,27 +4,15 @@
     {% include head.html %}
     
     <body>
-        <div id="post">
-        <article>
-            
-            <h1>{{ page.title }}</h1>
-            <time> {{ page.date | date_to_string }} </time>
-            {{content}}            
-            
+        
+        {% include sidebar.html %}
+        
+        <section id="content">
+            <article>
+                <h1>{{ page.title }}</h1>
+                <p><time>{{ page.date | date_to_string }}</time></p>
+            {{content}}
         </article>
-        
-        <section id="related">
-        
-            <h1>Related Posts</h1>
-            <ul>
-                {% for post in site.related_posts limit:3 %}
-                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}<time> {{ post.date | date_to_string }} </time></a></li>
-                
-                {% endfor %}
-            </ul>
-            
-        </section>    
-            
-        </div>
+        </section>
     </body>
 </html>

@@ -203,30 +203,15 @@ time {
     color: #aaa;
 }
 
-#paginate {
-    overflow: hidden;
-    margin: 0 -1rem;
-    color: #ccc;
-    text-align: center;
-}
 
-#paginate span, #paginate a {
-    display: block;
-    padding: 1rem;
-    border: 1px solid #eee;
-}
 
-@media (min-width: 30rem) {
-  
-    #paginate {
-        margin: 3rem 0;   
-    }
- 
-    #paginate span, #paginate a {
-        float: left;
-        width: 50%;
-}
-}
+
+
+
+
+
+
+
 
 
 

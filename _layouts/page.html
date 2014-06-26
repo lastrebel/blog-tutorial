@@ -4,11 +4,14 @@
     {% include head.html %}
     
     <body>
-        <div id="page">
-        <article>
-            <h1>{{ page.title }}</h1>
+        
+        {% include sidebar.html %}
+        
+        <section id="content">
+            <article>
+                <h1>{{ page.title }}</h1>
             {{content}}
         </article>
-        </div>
+        </section>
     </body>
 </html>
